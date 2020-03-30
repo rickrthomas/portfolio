@@ -19,31 +19,6 @@ import healersIntent from './img/healersIntent.png';
 // import logo from './logo.svg';
 import instagramArt from './img/instagramArt.jpg';
 import driftLumber from './img/driftLumber.jpg';
-import projectCard from './projectCard';
-
-import { makeStyles } from '@material-ui/core/styles';
-    import Paper from '@material-ui/core/Paper';
-    import Grid from '@material-ui/core/Grid';
-  //Material Ui styling https://material-ui.com/components/grid-list/
-  /**
-   * The example data is structured as follows:
-   *
-   * import image from 'path/to/image.jpg';
-   * [etc...]
-   *
-   * 
-   * const tileData = [
-   *   {
-   *     img: image,
-   *     title: 'Image',
-   *     author: 'author',
-   *   },
-   *   {
-   *     [etc...]
-   *   },
-   * ];
-   */
-  
 
    const projectData = [
        { 
@@ -92,55 +67,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
     
      
-    const useStyles = makeStyles(theme => ({
-        root: {
-          flexGrow: 1,
-        },
-        paper: {
-          padding: theme.spacing(2),
-          textAlign: 'center',
-          color: theme.palette.text.secondary,
-        },
-      }));
-      
-      export default function Projects(props) {
-        const classes = useStyles();
+    
+      export default function Projects() {
+
       
         return (
-          
-          <div className={classes.root}>
-            <Grid container spacing={3}>
-              <Grid item xs={12}>
-                <Paper className={classes.paper}>xs=12</Paper>
-              </Grid>
-              <Grid item xs={6}>
-                <Paper className={classes.paper}>
-                <projectCard
-                    link= "/metamorph"
-                    image= {metaMorph}
-                    title= "Metamorph: Cognitive Distortions "
-                    category= "Adult Coloring Book"
-                    description= "Adult coloring book meditation tool."
-                     
-                />
-                </Paper>
-              </Grid>
-              <Grid item xs={6}>
-                <Paper className={classes.paper}>xs=6</Paper>
-              </Grid>
-              <Grid item xs={3}>
-                <Paper className={classes.paper}>xs=3</Paper>
-              </Grid>
-              <Grid item xs={3}>
-                <Paper className={classes.paper}>xs=3</Paper>
-              </Grid>
-              <Grid item xs={3}>
-                <Paper className={classes.paper}>xs=3</Paper>
-              </Grid>
-              <Grid item xs={3}>
-                <Paper className={classes.paper}>xs=3</Paper>
-              </Grid>
-            </Grid>
+          <div>
+<h1>Wut</h1>
+
           </div>
         );
       }
