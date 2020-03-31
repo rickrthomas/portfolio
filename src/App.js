@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+
 // Import the BrowserRouter, Route and Link components
 import { BrowserRouter, Route, Link } from 'react-router-dom'; 
 import Projects from './Projects.js'; 
-import Articles from './Articles.js'; 
+
 import About from './About.js'; 
 import NavBar from './NavBar.js';
+import Services from './Services.js';
+import Footer from './Footer.js';
+import Store from './Store.js';
 import './App.css';
 import 'typeface-roboto';
 
@@ -14,25 +17,20 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <div className="navigation-sub">
-      <header className="App-header">
-     
-      </header>
-     <img src={logo} className="logo-image" alt="Logo Image" />                      
-        <Link to="/" className="item">Projects</Link>
-        <Link to="/articles" className="item">Articles</Link>
-        <Link to="/about" className="item">About</Link>
-                        
-      </div>
-      
-        <Route exact path="/" component={Projects} />
-        <Route path="/articles" component={Articles} />
-        <Route path="/about" component={About} />
     
+      <header className="App-header">
+      <NavBar />
+      </header>
+
+        <Route exact path="/" component={Projects} />
+        <Route path="/store" component={Store} />
+        <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
+
         <div className="footer">
-          
-          
+          <Footer />
         </div>
+
       </div>
     </BrowserRouter>
   );
